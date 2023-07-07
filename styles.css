@@ -1,0 +1,223 @@
+/* styles.css */
+body {
+    background: linear-gradient(180deg, #2A61DB 0%, #000000 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navbar styles */
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Main section styles */
+  main {
+    margin-top: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Form styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  .rectangular-container {
+    display: flex;
+  }
+  
+  .rectangular {
+    width: 296px;
+    height: 346px;
+    flex-shrink: 0;
+    border-radius: 30px 0px;
+    border: 0.5px solid #474747;
+    background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
+    margin-right: 100px;
+  }
+  section#contact h2 {
+    color: white;
+  }
+  section#what-we-do h2 {
+    color: white;
+  }
+  section#home h2 {
+    color: white;
+  }
+  section#portfolio  h2{
+    color: white;
+  }
+  
+  .rectangle-container {
+    display: flex;
+  }
+  
+  .rectangle {
+    width: 241.619px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 33.349px 0px;
+    border: 0.556px solid #474747;
+    background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
+    margin-right: 16px; /* adjust the margin as per your requirement */
+    margin-right: 0;
+  }
+  .rectangle-container {
+    display: flex;
+  }  
+  .portfolio-description{
+    display: none;
+  }
+  
+  .rectangle:hover {
+    background-color: blue;
+    width: 30%;
+    .portfolio-description{
+      display: block;
+    }
+    
+  }
+  .portfolio-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 40px;
+    gap: 0; /* Add this line to remove the gap between rectangles */
+  }
+  @media (max-width: 768px) {
+    .portfolio-container {
+      overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+      margin-bottom: 16px; /* Reduce the margin at the bottom */
+    }
+  }
+  
+  .portfolio-text {
+    padding: 16px;
+  }
+  .portfolio-number {
+    color: #757575;
+    text-align: justify;
+    
+    font-size: 35.572px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 128%;
+    letter-spacing: -0.356px;
+    margin: 0;
+  }
+  
+  .portfolio-title {
+    color: #FFF;
+    text-align: justify;
+    
+    
+    font-size: 24.456px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: -0.245px;
+    margin: 0;
+  }
+  .section-line {
+    width: 1300px;
+    height: 1px;
+    background: #AAA;
+    margin: 15px auto;
+  }
+  .logo {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and the text */
+  }
+  .get-started-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:#FFFFFF;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #1C46B3;
+  }
+  
+#who-we-are {
+  margin-top: 40px;
+}
+.rectangle-1 {
+   width: 1082px;
+    height: 102px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 20px; /* adjust the margin as per your requirement */
+    transition: background-color 0.3s;
+    border-radius: 10px; /* add border-radius for rounded corners */
+    border: 0.5px solid #ccc; /* add border */
+    margin-bottom: 0; /* remove the margin-bottom */
+    overflow: hidden; /* Hide any overflow content */
+}  
+.rectangle-1:hover {
+  transform: translateY(10px);
+  background-color: blue;
+  margin-bottom: -10px;
+  margin-top: -10px;
+}
+.rectangle-1:hover .portfolio-description {
+  display: block;
+} 
+.rectangle-containerr {
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: flex-start;
+}
+
+section#p h2 {
+  color: white;
+}  
+  

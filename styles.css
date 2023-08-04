@@ -110,9 +110,9 @@ body {
     display: none;
   }
   
-  .rectangle:hover {
+  .rectangle-2:hover {
     background-color: blue;
-    width: 30%;
+    width: 100%;
     .portfolio-description{
       display: block;
     }
@@ -162,7 +162,7 @@ body {
     margin: 0;
   }
   .section-line {
-    width: 1300px;
+    
     height: 1px;
     background: #AAA;
     margin: 15px auto;
@@ -190,7 +190,7 @@ body {
 #who-we-are {
   margin-top: 40px;
 }
-.rectangle-1 {
+.rectangle-2 {
    width: 1082px;
     height: 102px;
     flex-shrink: 0;
@@ -204,7 +204,7 @@ body {
     margin-bottom: 0; /* remove the margin-bottom */
     overflow: hidden; /* Hide any overflow content */
 }  
-.rectangle-1:hover {
+.rectangle-2:hover {
   transform: translateY(10px);
   background-color: blue;
   margin-bottom: -10px;
@@ -258,28 +258,23 @@ section#p h2 {
   align-items: flex-start;
 }
 
-.about-us-services-blog {
+.client-container {
+  display: flex; /* Make the rectangles display in a row */
+  justify-content: center; /* Center the rectangles horizontally */
+  gap: 26px; /* Add some space between the rectangles */
+  margin-top: 20px; /* Add some top margin to separate the rectangles from the section title */
+}
+
+.rectangle-1 {
+  width: 200px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 30px 0; /* Apply the border radius */
+  border: 0.5px solid #FFF; /* Add border with the specified color and thickness */
+  background: linear-gradient(135deg, rgba(217,217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
+  background-size: cover;
+}
+.footer-1{
   display: flex;
-  justify-content: flex-end;
-  margin-top: 300 px;
-}
-
-.about-us, .services, .blog, .connect-with-us {
-  color: #FFF;
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  letter-spacing: 0.8px;
-}
-
-.about-us {
-  position: absolute;
-  right: 750px;
-}
-
-.services, .blog, .connect-with-us {
-  position: relative;
-  margin-left: 142px;
+  justify-content: space-evenly;
 }

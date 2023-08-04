@@ -62,6 +62,7 @@ body {
   }
   .rectangular-container {
     display: flex;
+    gap: 20px;
   }
   
   .rectangular {
@@ -72,6 +73,8 @@ body {
     border: 0.5px solid #474747;
     background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
     margin-right: 100px;
+    perspective: 1000px;
+    cursor: pointer;
   }
   section#contact h2 {
     color: white;
@@ -216,8 +219,67 @@ body {
  
   align-items: flex-start;
 }
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  /* Front content styles */
+}
+
+.back {
+  /* Back content styles */
+  transform: rotateY(180deg);
+}
+
+.rectangular:hover .card {
+  transform: rotateY(180deg);
+}
 
 section#p h2 {
   color: white;
-}  
-  
+} 
+
+#OurTeam {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-us-services-blog {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 300 px;
+}
+
+.about-us, .services, .blog, .connect-with-us {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.8px;
+}
+
+.about-us {
+  position: absolute;
+  right: 750px;
+}
+
+.services, .blog, .connect-with-us {
+  position: relative;
+  margin-left: 142px;
+}

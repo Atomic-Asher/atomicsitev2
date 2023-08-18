@@ -88,19 +88,23 @@
       
       
       <div class="rectangular-container">
-        <div class="rectangular" onclick="toggleCard(this)">
+        <div class="rectangular rectangular" onclick="toggleCard(this)">
           <div class="card">
             <div class="front">
               <!-- Front content -->
               <h3>Rectangle 1 Front</h3>
+              <h3>Rectangle 1 Front</h3>
             </div>
             <div class="back">
+              <p style="color: black;">Rectangle 1 Back</p>
               <p style="color: black;">Rectangle 1 Back</p>
             </div>
           </div>
         </div>
       
-        <div class="rectangular" onclick="toggleCard(this)">
+       
+      
+        <div class="rectangular rectangular" onclick="toggleCard(this)">
           <div class="card">
             <div class="front">
               <!-- Front content -->
@@ -112,7 +116,7 @@
           </div>
         </div>
       
-        <div class="rectangular" onclick="toggleCard(this)">
+        <div class="rectangular rectangular" onclick="toggleCard(this)">
           <div class="card">
             <div class="front">
               <!-- Front content -->
@@ -123,19 +127,13 @@
             </div>
           </div>
         </div>
-      
-        <div class="rectangular" onclick="toggleCard(this)">
-          <div class="card">
-            <div class="front">
-              <!-- Front content -->
-              <h3>Rectangle 4 Front</h3>
-            </div>
-            <div class="back">
-              <p style="color: black;">Rectangle 4 Back</p>
-            </div>
-          </div>
-        </div>
       </div>
+      
+      <script type="text/javascript">
+        function toggleCard(element) {
+          element.querySelector('.card').classList.toggle('flipped');
+        }
+      </script>
       
       <section id="OurTeam">  
         <h2>Our Team</h2>

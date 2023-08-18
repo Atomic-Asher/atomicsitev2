@@ -126,6 +126,22 @@ body {
     overflow: hidden;
   }
   
+  
+  rectangle-2 {
+    width: 1082px;
+    height: 102px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border: 0.5px solid #ccc;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  
   .rectangle-2:hover {
     transform: translateY(10px);
     background-color: blue;

@@ -110,13 +110,27 @@ body {
     display: none;
   }
   
+  
+  rectangle-2 {
+    width: 1082px;
+    height: 102px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border: 0.5px solid #ccc;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  
   .rectangle-2:hover {
+    transform: translateY(10px);
     background-color: blue;
-    width: 100%;
-    .portfolio-description{
-      display: block;
-    }
-    
+    margin-bottom: -10px;
+    margin-top: -10px;
   }
   .portfolio-container {
     display: flex;
@@ -277,4 +291,43 @@ section#p h2 {
 .footer-1{
   display: flex;
   justify-content: space-evenly;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 59px;
+  justify-content: space-between;
+}
+
+.team-member {
+  width: calc((100% - 3 * 59px) / 4); /* Calculate the width for each team member with 3 gaps in between */
+  height: 310px;
+  flex-shrink: 0;
+  border-radius: 19.396px;
+  background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
+  /* Add other styles for the team member container if needed */
+}
+
+.team-picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Add styles for the team member's picture */
+  object-fit: cover; /* Ensure the image covers the entire rectangle */
+}
+.team-name, .team-role {
+  margin: 0;
+}
+.team-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to make text more readable */
+  color: white;
 }

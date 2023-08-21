@@ -107,7 +107,7 @@ body {
     display: flex;
   }  
   .portfolio-description{
-    display: none;
+    display: flex;
   }
   
   
@@ -265,9 +265,7 @@ body {
   backface-visibility: hidden;
 }
 
-.front {
-  /* Front content styles */
-}
+
 
 .back {
   /* Back content styles */
@@ -292,7 +290,9 @@ section#p h2 {
   display: flex; /* Make the rectangles display in a row */
   justify-content: center; /* Center the rectangles horizontally */
   gap: 26px; /* Add some space between the rectangles */
-  margin-top: 20px; /* Add some top margin to separate the rectangles from the section title */
+  margin-top: 20px; 
+  padding:0;
+  margin:0;/* Add some top margin to separate the rectangles from the section title */
 }
 
 .rectangle-1 {
@@ -346,4 +346,28 @@ section#p h2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to make text more readable */
   color: white;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+ 
+}
+
+.hero-image {
+  flex-shrink: 0;
+  margin-right: 20px; /* Add some spacing between text and image */
+}
+
+.hero-image img {
+  max-width: 400px; /* Adjust the image size as needed */
+  height: auto;
+}
+.container {
+  margin-right: 0;
+  margin-left: 0;
 }

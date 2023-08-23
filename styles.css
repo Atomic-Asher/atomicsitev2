@@ -1,156 +1,6 @@
 /* styles.css */
 body {
-<<<<<<< HEAD
-    background: linear-gradient(180deg, #2A61DB 0%, #000000 100%);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Navbar styles */
-  nav {
-    background-color: #f2f2f2;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Main section styles */
-  main {
-    margin-top: 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  /* Form styles */
-  form {
-    margin-top: 20px;
-  }
-  
-  form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  form label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
-  }
-  .rectangular-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .rectangular {
-    width: 296px;
-    height: 346px;
-    flex-shrink: 0;
-    border-radius: 30px 0px;
-    border: 0.5px solid #474747;
-    background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
-    margin-right: 100px;
-    perspective: 1000px;
-    cursor: pointer;
-  }
-  section#contact h2 {
-    color: white;
-  }
-  section#what-we-do h2 {
-    color: white;
-  }
-  section#home h2 {
-    color: white;
-  }
-  section#portfolio  h2{
-    color: white;
-  }
-  
-  .rectangle-container {
-    display: flex;
-  }
-  
-  .rectangle {
-    width: 241.619px;
-    height: 380px;
-    flex-shrink: 0;
-    border-radius: 33.349px 0px;
-    border: 0.556px solid #474747;
-    background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
-    margin-right: 16px; /* adjust the margin as per your requirement */
-    margin-right: 0;
-  }
-  .rectangle-container {
-    display: flex;
-  }  
-  .portfolio-description{
-    display: flex;
-  }
-  
-  
-  rectangle-2 {
-    width: 1082px;
-    height: 102px;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
-    border-radius: 10px;
-    border: 0.5px solid #ccc;
-    margin-bottom: 0;
-    overflow: hidden;
-  }
-  
-  
-  rectangle-2 {
-    width: 1082px;
-    height: 102px;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    margin-bottom: 20px;
-    transition: background-color 0.3s;
-    border-radius: 10px;
-    border: 0.5px solid #ccc;
-    margin-bottom: 0;
-    overflow: hidden;
-  }
-  
-  .rectangle-2:hover {
-    transform: translateY(10px);
-    background-color: blue;
-    margin-bottom: -10px;
-    margin-top: -10px;
-  }
-=======
-  background: linear-gradient(180deg, #2a61db 0%, #000000 100%);
+  background: linear-gradient(180deg,  #000000 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -213,7 +63,7 @@ footer {
 .rectangular-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
 }
 
 .rectangular {
@@ -312,7 +162,6 @@ rectangle-2 {
   gap: 0; /* Add this line to remove the gap between rectangles */
 }
 @media (max-width: 768px) {
->>>>>>> 5f35a3336126f4f24004c20209a2d1f535a7195c
   .portfolio-container {
     overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
     margin-bottom: 16px; /* Reduce the margin at the bottom */
@@ -420,11 +269,8 @@ rectangle-2 {
   backface-visibility: hidden;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 5f35a3336126f4f24004c20209a2d1f535a7195c
 .back {
   /* Back content styles */
   transform: rotateY(180deg);
@@ -447,7 +293,7 @@ section#p h2 {
 .client-container {
   display: flex; /* Make the rectangles display in a row */
   justify-content: center; /* Center the rectangles horizontally */
-  gap: 26px; /* Add some space between the rectangles */
+  gap: 60px; /* Add some space between the rectangles */
   margin-top: 20px; 
   padding:0;
   margin:0;/* Add some top margin to separate the rectangles from the section title */
@@ -559,4 +405,31 @@ section#p h2 {
   height: 150px; /* Adjust the height as needed */
   object-fit: cover; /* Maintain aspect ratio and cover container */
   border-radius: 50%; /* Make the images circular */
+}
+/* Your existing CSS rules */
+
+/* Media query for screens smaller than 768px (common breakpoint for mobile) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4vw;
+  }
+
+  .navbar {
+    background-color: #292929;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portfolio-container {
+    overflow-x: scroll;
+    margin-bottom: 16px;
+  }
+
+  /* Add other responsive styles here */
+}
+html{
+  font-size: 15capx;
 }

@@ -1,6 +1,6 @@
 /* styles.css */
 body {
-  background: linear-gradient(180deg,  #000000 100%);
+  background: linear-gradient(180deg, #000000 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -29,7 +29,8 @@ nav ul li a {
 
 /* Main section styles */
 main {
-  margin-top: 20px;
+  
+  margin:1.5rem;
 }
 
 section {
@@ -114,12 +115,8 @@ section#portfolio h2 {
 .rectangle-container {
   display: flex;
 }
-.portfolio-description {
-  
-}
 
 rectangle-2 {
-  width: 1082px;
   height: 102px;
   flex-shrink: 0;
   justify-content: center;
@@ -134,7 +131,6 @@ rectangle-2 {
 }
 
 rectangle-2 {
-  width: 1082px;
   height: 102px;
   flex-shrink: 0;
   justify-content: center;
@@ -225,7 +221,6 @@ rectangle-2 {
   margin-top: 40px;
 }
 .rectangle-2 {
-  width: 1082px;
   height: 102px;
   flex-shrink: 0;
   justify-content: center;
@@ -269,8 +264,6 @@ rectangle-2 {
   backface-visibility: hidden;
 }
 
-
-
 .back {
   /* Back content styles */
   transform: rotateY(180deg);
@@ -294,9 +287,9 @@ section#p h2 {
   display: flex; /* Make the rectangles display in a row */
   justify-content: center; /* Center the rectangles horizontally */
   gap: 60px; /* Add some space between the rectangles */
-  margin-top: 20px; 
-  padding:0;
-  margin:0;/* Add some top margin to separate the rectangles from the section title */
+  margin-top: 20px;
+  padding: 0;
+  margin: 0; /* Add some top margin to separate the rectangles from the section title */
 }
 
 .rectangle-1 {
@@ -375,7 +368,6 @@ section#p h2 {
 
 .hero-text {
   flex: 1;
- 
 }
 
 .hero-image {
@@ -430,6 +422,6 @@ section#p h2 {
 
   /* Add other responsive styles here */
 }
-html{
+html {
   font-size: 15capx;
 }

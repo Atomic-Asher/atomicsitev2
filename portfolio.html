@@ -8,41 +8,27 @@
   <style>
     /* Add your custom styles here */
     h1 {
-      font-family: 'Neue Metana Next Free Personal';
+      font-family: 'archivo black';
     }
 
     p {
-      font-family: 'Raleway';
+      font-family: 'open sans';
     }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="logo atmoic.jpg" alt="Atomic Asher Logo" class="logo">
-        Atomic Asher</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" href="http://blog.atomicasher.com/">Blog</a>
-          </li>
-          
-          
-        </ul>
-      </div>
-    </div>
+  <nav class="custom-navbar">
+    <a class="navbar-brand" href="#">
+      <img src="logo atmoic.jpg" alt="Atomic Asher Logo" class="logo">
+      Atomic Asher
+    </a>
+    <ul class="navbar-links">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="portfolio.html">Portfolio</a>
+      <a class="nav-link" href="http://blog.atomicasher.com/">Blog</a>
+    </ul>
   </nav>
 
 
@@ -60,8 +46,10 @@
       
 
       <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="section-line"></div>
+        <div style="display: flex; align-items: center;" style="padding-left: 14rem; padding-right: 14rem;">
+          <div class="small-rectangle" style="width: 30px; height: 2px; background: #208BFF; flex-shrink: 0;"></div>
+          <div style="color: #208BFF; font-size: 18px; font-family: Clash Display; font-weight: 600; text-transform: uppercase; line-height: 19.80px; word-wrap: break-word; margin-left: 10px;">Portfolio</div>
+      </div>
         <p>Our diverse portfolio showcases our ability to deliver unique solutions to society's problems. We're proud of our achievements, from leading the development of systems combating human trafficking to strategies for brand anti-piracy. We view every challenge as an opportunity to make a lasting impact, and we continuously strive to create solutions that improve lives and deliver tangible results.</p>
         <div class="rectangle-containerr">
         
@@ -93,8 +81,10 @@
 
 
       <section id="p">
-        <h2>Let's discuss your ideas</h2>
-        <div class="section-line"></div>
+        <div style="display: flex; align-items: center;">
+          <div class="small-rectangle" style="width: 30px; height: 2px; background: #208BFF; flex-shrink: 0;"></div>
+          <div style="color: #208BFF; font-size: 18px; font-family: Clash Display; font-weight: 600; text-transform: uppercase; line-height: 19.80px; word-wrap: break-word; margin-left: 10px;">Let’s discuss your ideas</div>
+      </div>
         <p>Ready to embark on a transformational journey? Let's create groundbreaking solutions together. Reach out to us and discover how Atomic Asher LLP can elevate your systems and strategies. We're excited to hear from you and explore the potential of what we can accomplish together.</p>
         <a class="get-started-button" href="index.html#contact">Get Started</a>
       </section>
@@ -116,7 +106,7 @@
       
         footer p {
           color: #FFF;
-          font-family: Raleway;
+          font-family: 'Open Sans' ;
           font-size: 14px;
           font-style: normal;
           font-weight: 400;
@@ -125,7 +115,7 @@
         }
         #Our Team {
           color: #FFF;
-          font-family: Raleway;
+          font-family: 'Open Sans';
           font-size: 14px;
           font-style: normal;
           font-weight: 400;

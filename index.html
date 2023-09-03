@@ -64,7 +64,7 @@
       
 
       <section id="home">
-        <div style="display: flex; align-items: center; padding-left: 14rem; padding-right: 14rem;">
+        <div style="display: flex; align-items: center; padding-left: 14rem; padding-right: 14rem; margin-top: 1rem;">
             <div class="small-rectangle" style="width: 1.5rem; height: 0.1rem; background: #208BFF; flex-shrink: 0;"></div>
             <div style="color: #208BFF; font-size: 1rem; font-family: Neue Metana Next Free Personal; font-weight: 600; text-transform: uppercase; line-height: 1.1rem; word-wrap: break-word; margin-left: 0.625rem;">Who we are</div>
         </div>
@@ -148,18 +148,15 @@
         </div>
       </div>
       
-      <script type="text/javascript">
-        function toggleCard(element) {
-          element.querySelector('.card').classList.toggle('flipped');
-        }
-      </script>
+     
+
       
       <section id="OurTeam">  
         <div style="display: flex; align-items: center;padding-left: 42rem; padding-right: 42rem;">
           <div class="section-line"></div>
        
           <div class="small-rectangle" style="width: 30px; height: 2px; background: #208BFF; flex-shrink: 0;"></div>
-          <div style="color: #208BFF; font-size: 18px; font-family: Neue Metana Next Free Personal; font-weight: 600; text-transform: uppercase; line-height: 19.80px; word-wrap: break-word; margin-left: 10px;">Our Team</div>
+          <div style="color: #208BFF; font-size: 18px; font-family: Neue Metana Next Free Personal; font-weight: 600; text-transform: uppercase; line-height: 19.80px; word-wrap: break-word; margin-left: 10px;margin-top: 1rem;">Our Team</div>
           <div class="section-line"></div>
           
       </div>
@@ -258,19 +255,20 @@
           <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
         </form>
       </section>
-      <section id="new-section" style="display: flex; justify-content: space-evenly; flex-shrink: 0; padding-top: 9.375rem;">
-        <div class="rectangle" style="width: 34.25rem; height: 17.125rem; flex-shrink: 0; border-radius: 2.777rem 0px; border: 0.005rem solid #FFF; background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%); padding-right: 2.5rem; justify-content: space-between; display: flex;">
-          <p style="color: var(--secondary, #FFF); font-family: Inter; font-size: 1rem; font-style: normal; font-weight: 400; line-height: normal; padding-left: 1.25rem; margin-top: 3.125rem;">Our vision</p>
-          
-          
+      <section id="new-section" class="flex-container">
+        <div class="rectangle" onclick="toggleCard2(this)">
+            <p>Our vision</p>
         </div>
-        <div class="rectangle" style="width: 34.25rem; height: 17.125rem; flex-shrink: 0; border-radius: 2.777rem 0px; border: 0.005rem solid #FFF; background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%); padding-right: 2.5rem; justify-content: space-between; display: flex;">
-          <p style="color: var(--secondary, #FFF); font-family: Inter; font-size: 1rem; font-style: normal; font-weight: 400; line-height: normal; padding-left: 1.25rem; margin-top: 3.125rem;">Our mission</p>
-          
-          
+        <div class="rectangle" onclick="toggleCard2(this)">
+            <p>Our mission</p>
         </div>
-      </section>
-      
+    </section>
+
+    <script>
+        function toggleCard2(element) {
+            element.classList.toggle('flipped');
+        }
+    </script>
   </main>
   
   

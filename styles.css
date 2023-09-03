@@ -116,6 +116,7 @@ section#what-we-do h2 {
 }
 section#home h2 {
   color: white;
+  
 }
 section#portfolio h2 {
   color: white;
@@ -315,6 +316,7 @@ section#p h2 {
   justify-content: center; /* Center the rectangles horizontally */
   gap: 60px; /* Add some space between the rectangles */
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
   margin: 0; /* Add some top margin to separate the rectangles from the section title */
 }
@@ -406,7 +408,7 @@ section#p h2 {
 }
 
 .hero-image img {
-  max-width: 31.25rem; /* 500px converted to rem */
+  max-width: 32.25rem; /* 500px converted to rem */
   height: auto;
 }
 
@@ -469,4 +471,40 @@ html {
   border: 1px solid #555; /* Border color */
   border-radius: 4px; /* Rounded corners for input fields */
   padding: 8px; /* Add padding for spacing */
+}
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+  padding-top: 9.375rem;
+}
+
+.rectangle {
+  width: 34.25rem;
+  height: 17.125rem;
+  flex-shrink: 0;
+  border-radius: 2.777rem 0px;
+  border: 0.005rem solid #FFF;
+  background: linear-gradient(135deg, rgba(217, 217, 217, 0.13) 0%, rgba(217, 217, 217, 0.00) 100%);
+  padding-right: 2.5rem;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.5s; /* Add a transition for the transform property */
+}
+
+.rectangle p {
+  color: var(--secondary, #FFF);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 1.25rem;
+  margin-top: 3.125rem;
+}
+
+/* Add a class for the flipped state */
+.flipped {
+  transform: rotateY(180deg);
 }

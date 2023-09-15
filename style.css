@@ -1,0 +1,307 @@
+:root {
+  --background-color: #1d1d1f;
+  --primary-font-color: #fff;
+  --secondary-font-color: #208bff;
+  --tertiary-color: #d5d5d5;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-font-color);
+  font-family: Clashdisplay, sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  margin: 0 1.5rem;
+}
+
+.logo-img {
+  width: 4vw;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  margin: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Clashdisplay, sans-serif;
+  font-size: 1.8rem;
+}
+
+.hero-img {
+  width: 30vw;
+}
+
+.cta-btn {
+  background: linear-gradient(to right, #585a5d, #483f41);
+  /* border: 1px solid linear-gradient(#fff, #525252); */
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
+  color: var(--primary-font-color);
+}
+
+/* WHO WE ARE SECTION */
+
+.who-we-are {
+  margin: 5rem;
+}
+
+.who-we-are-heading {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.who-we-are-main-txt {
+  color: var(--primary-font-color);
+  font-size: 1.2rem;
+}
+
+.grey-txt {
+  color: #7e7e7e;
+}
+
+.who-we-are-sub-txt {
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.large-txt-bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.large-txt {
+  font-size: 1.5rem;
+}
+
+.who-we-are-sub-txt-1,
+.who-we-are-sub-txt-2 {
+  margin-bottom: 0.3rem;
+}
+
+/* WHAT WE DO SECTION */
+
+.what-we-do {
+  margin: 5rem;
+}
+
+.what-we-do-heading {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.what-we-do-main-txt {
+  color: var(--primary-font-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.what-we-do-sub-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we-do-sub-txt {
+  text-align: center;
+  font-weight: light;
+}
+
+.what-we-do-sub {
+  padding: 1rem 1rem 2rem;
+  background: linear-gradient(to right, #d9d9d921, #d9d9d900);
+  border: 0.5px solid #585a5d;
+  border-radius: 20px 0 20px 0;
+  width: 20vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-we-do-img {
+  /* width: 10vw; */
+  width: 10rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* MEET OUR TEAM SECTION */
+
+.meet-our-team {
+  margin: 5rem;
+}
+
+.meet-our-team-heading {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.meet-our-team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(1.2rem, 4vw, 5rem);
+}
+
+.grid-item {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #d9d9d921, #d9d9d900);
+  border: 0.5px solid #585a5d;
+  border-radius: 20px 0 20px 0;
+  padding: 1.2rem 0;
+}
+
+.meet-our-team-wrapper div {
+  margin: auto;
+}
+
+.team-name {
+  font-size: 1rem;
+}
+
+.team-sub-txt {
+  font-size: 0.7rem;
+  margin: 1.2rem 0;
+}
+
+/* OUR VISION AND MISSION */
+
+.our-vision-mission {
+  margin: 5rem;
+}
+
+.our-vision-mission-header {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.our-vision-mission-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.year {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.our-vision,
+.our-mission {
+  padding: 3rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  background: linear-gradient(to right, #d9d9d921, #d9d9d900);
+  border: 0.5px solid #585a5d;
+  border-radius: 20px 0 20px 0;
+  position: relative;
+  gap: 1rem;
+}
+
+.vision-main-txt,
+.mission-main-txt {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.white-circle {
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--primary-font-color);
+  border-radius: 50%;
+}
+
+/* CONTACT US SECTION */
+
+.contact-us {
+  margin: 5rem;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form .form-group {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: var(--tertiary-color); /* Darker grey for input fields */
+  color: #7e7e7e; /* Text color */
+  border: 1px solid #555; /* Border color */
+  border-radius: 4px; /* Rounded corners for input fields */
+  padding: 8px; /* Add padding for spacing */
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #585a5d, #483f41);
+  /* border: 1px solid linear-gradient(#fff, #525252); */
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
+  color: var(--primary-font-color);
+}
+
+.contact-sub-heading {
+  margin-top: 1rem;
+}
+
+.contact-heading {
+  margin-bottom: 1rem;
+}

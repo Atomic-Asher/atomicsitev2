@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atomic Asher LLP</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -16,7 +23,7 @@
       </div>
     </nav>
     <section class="hero-section">
-      <div>
+      <div class="hero-txt">
         <h2>
           We are an industry agnostic, technology driven, problem solving
           organisation
@@ -96,56 +103,64 @@
           <p class="team-name">Anirudh Asher</p>
           <p class="grey-txt team-sub-txt">MANAGING PARTNER</p>
           <img src="images/1.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
           <p class="team-name">Rasang Zaveri</p>
           <p class="grey-txt team-sub-txt">PARTNER</p>
           <img src="images/2.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
           <p class="team-name">Jigisha Jain</p>
           <p class="grey-txt team-sub-txt">MANAGEMENT</p>
           <img src="images/3.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
           <p class="team-name">Charita Ranadive</p>
           <p class="grey-txt team-sub-txt">UIUX DESIGNER</p>
           <img src="images/4.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
-          <p class="team-name">Charita Ranadive</p>
-          <p class="grey-txt team-sub-txt">UIUX DESIGNER</p>
-          <img src="images/4.png" alt="" />
+          <p class="team-name">
+            This could be <span class="blue-txt">YOU</span>
+          </p>
+          <p class="grey-txt team-sub-txt">PROJECT MANAGER</p>
+          <img src="images/anon-user.svg" alt="" /><br />
+          <button class="apply-btn">Apply now!</button>
         </div>
         <div class="grid-item">
-          <p class="team-name">Hritisha Nagdev</p>
-          <p class="grey-txt team-sub-txt">Business Analyst</p>
+          <p class="team-name">Mangesh Shinde</p>
+          <p class="grey-txt team-sub-txt">INTERNATIONAL OPERATIONS ADMIN</p>
           <img src="images/5.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
           <p class="team-name">Allan Almeida</p>
           <p class="grey-txt team-sub-txt">SR. DEVELOPER</p>
           <img src="images/6.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
         <div class="grid-item">
           <p class="team-name">Devansh Damani</p>
           <p class="grey-txt team-sub-txt">JR. DEVELOPER</p>
           <img src="images/7.png" alt="" />
+          <i class="fa-brands fa-linkedin linkedin-icon"></i>
         </div>
       </div>
     </section>
     <section class="our-vision-mission">
       <p class="our-vision-mission-header">—— OUR VISION & MISSION</p>
       <div class="our-vision-mission-wrapper">
-        <div class="our-vision">
+        <div class="our-vision" onclick="toggleCard(this)">
           <p class="year">2023</p>
           <p class="vision-main-txt">Our vision</p>
-          <div class="white-circle"></div>
         </div>
-        <div class="our-mission">
+        <div class="our-mission" onclick="toggleCard(this)">
           <p class="year">2023</p>
           <p class="mission-main-txt">Our mission</p>
-          <div class="white-circle"></div>
         </div>
       </div>
     </section>
@@ -177,7 +192,7 @@
             class="form-control"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="Your Email"
             required
           />
         </div>
@@ -188,7 +203,7 @@
             class="form-control"
             id="company"
             name="company"
-            placeholder="Company"
+            placeholder="Your Company"
           />
         </div>
 
@@ -197,5 +212,50 @@
         </button>
       </form>
     </section>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-header">Atomic Asher LLP</div>
+        <div class="footer-about-us">
+          <h4>About Us</h4>
+          <p>Who are we?</p>
+          <p>What do we do?</p>
+          <p>Why us?</p>
+          <p>Approach a problem</p>
+        </div>
+        <div class="services-footer">
+          <h4>Services</h4>
+          <p>Services</p>
+          <p>Projects</p>
+          <p>Others</p>
+        </div>
+        <div class="blog-footer">
+          <h4>Blog</h4>
+          <p>Blog 1</p>
+          <p>Blog 2</p>
+          <p>Blog 3</p>
+        </div>
+        <div class="connect-footer">
+          <h4>Connect with us</h4>
+          <div class="icon-wrapper">
+            <a href="https://www.linkedin.com/company/atomic-asher-llp/"
+              ><i class="fa-brands fa-linkedin-in footer-icon"></i
+            ></a>
+            <a href="https://twitter.com/AtomicAsher">
+              <i class="fa-brands fa-twitter footer-icon"></i
+            ></a>
+            <a href="https://www.instagram.com/atomicasher/"
+              ><i class="fa-brands fa-instagram footer-icon"></i
+            ></a>
+            <a href="mailto:hello@atomicasher.com"
+              ><i class="fa-solid fa-envelope footer-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-sub">© 2023 Atomic Asher. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

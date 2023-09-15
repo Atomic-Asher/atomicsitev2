@@ -5,7 +5,12 @@
   --tertiary-color: #d5d5d5;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+@font-face {
+  font-family: Clashdisplay;
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -16,7 +21,7 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-font-color);
-  font-family: Clashdisplay, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* NAVBAR SECTION */
@@ -39,6 +44,10 @@ body {
   margin: 0 1.5rem;
 }
 
+.nav-items a:hover {
+  color: var(--secondary-font-color);
+}
+
 .logo-img {
   width: 4vw;
 }
@@ -52,6 +61,11 @@ body {
   justify-content: space-between;
   font-family: Clashdisplay, sans-serif;
   font-size: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.hero-txt {
+  width: 60%;
 }
 
 .hero-img {
@@ -69,6 +83,10 @@ body {
   margin: 2rem 0;
   box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
   color: var(--primary-font-color);
+}
+
+.cta-btn:hover {
+  color: var(--secondary-font-color);
 }
 
 /* WHO WE ARE SECTION */
@@ -131,6 +149,8 @@ body {
 .what-we-do-sub-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .what-we-do-sub-txt {
@@ -147,6 +167,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 200px;
+  height: 300px;
 }
 
 .grow {
@@ -183,11 +205,17 @@ body {
 
 .grid-item {
   width: 100%;
+  height: 100%;
   text-align: center;
   background: linear-gradient(to right, #d9d9d921, #d9d9d900);
   border: 0.5px solid #585a5d;
   border-radius: 20px 0 20px 0;
   padding: 1.2rem 0;
+}
+
+.blue-txt {
+  color: var(--secondary-font-color);
+  font-weight: bold;
 }
 
 .meet-our-team-wrapper div {
@@ -201,6 +229,20 @@ body {
 .team-sub-txt {
   font-size: 0.7rem;
   margin: 1.2rem 0;
+}
+
+.apply-btn {
+  background: var(--secondary-font-color);
+  box-shadow: 0 0 0 1px var(--background-color), 0 0 0 3px #525252;
+  color: var(--primary-font-color);
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.apply-btn:hover {
+  background-color: #1163ba;
 }
 
 /* OUR VISION AND MISSION */
@@ -248,13 +290,6 @@ body {
   flex-grow: 1;
 }
 
-.white-circle {
-  height: 1rem;
-  width: 1rem;
-  background-color: var(--primary-font-color);
-  border-radius: 50%;
-}
-
 /* CONTACT US SECTION */
 
 .contact-us {
@@ -298,10 +333,78 @@ form label {
   color: var(--primary-font-color);
 }
 
+.submit-btn:hover {
+  color: var(--secondary-font-color);
+}
+
 .contact-sub-heading {
   margin-top: 1rem;
 }
 
 .contact-heading {
   margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 5rem 5rem 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-wrapper a {
+  color: var(--primary-font-color);
+}
+
+.footer-sub {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.footer-icon:hover {
+  color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .meet-our-team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: clamp(1.2rem, 4vw, 5rem);
+  }
+
+  .what-we-do-sub-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .meet-our-team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: clamp(1.2rem, 4vw, 5rem);
+  }
+
+  .what-we-do-sub-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-txt {
+    width: 100%;
+  }
 }

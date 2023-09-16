@@ -1,0 +1,254 @@
+:root {
+  --primary-font-color: #fff;
+  --secondary-font-color: #208bff;
+  --tertiary-color: #d5d5d5;
+}
+
+@font-face {
+  font-family: Clashdisplay;
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: var(--primary-font-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* NAVBAR SECTION */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem 0;
+  position: fixed;
+  background-color: rgba(29, 29, 31, 0.8);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  margin: 0 1.5rem;
+}
+
+.nav-items a:hover {
+  color: var(--secondary-font-color);
+}
+
+.logo-img {
+  width: 4vw;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  margin: 0 5rem 5rem;
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Clashdisplay, sans-serif;
+  font-size: 1.7rem;
+  flex-wrap: wrap;
+}
+
+.hero-txt {
+  width: 60%;
+}
+
+.hero-img {
+  width: 30vw;
+}
+
+.cta-btn {
+  background: linear-gradient(to right, #585a5d, #483f41);
+  /* border: 1px solid linear-gradient(#fff, #525252); */
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
+  color: var(--primary-font-color);
+}
+
+.cta-btn:hover {
+  background: var(--secondary-font-color);
+}
+
+/* OUR WORK SECTION */
+
+.our-work {
+  margin: 0 10rem;
+  color: var(--primary-font-color);
+}
+
+.our-work-header {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.light-txt {
+  color: #7e7e7e;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  margin: 5rem 10rem;
+  font-family: Clashdisplay;
+}
+
+.projects-sub {
+  display: flex;
+  width: 100%;
+  border: 1px solid #717171;
+  background-color: #2a2a2c;
+  border-radius: 50px 0 50px 0;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.projects-sub-1,
+.projects-sub-2 {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 300px;
+}
+
+.projects-sub-1 {
+  color: #717171;
+  padding: 2rem;
+}
+
+.projects-sub-1 h1 {
+  margin-bottom: 1rem;
+}
+
+.projects-sub-1 p {
+  margin-top: 1rem;
+}
+
+.projects-sub-2 {
+  background: url("images/background-img.png");
+  background-size: contain;
+  border-radius: 50px 0 50px 0;
+}
+
+/* YOUR IDEAS SECTION */
+
+.your-ideas {
+  margin: 10rem;
+}
+
+.your-ideas-header {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+}
+
+.your-ideas-main {
+  margin-bottom: 2rem;
+}
+
+.ideas-btn {
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 0 0 2px #1e2128, 0 0 0 4px #525252;
+  color: var(--primary-font-color);
+}
+
+.get-started-btn {
+  background-color: var(--primary-font-color);
+  color: #1d1d1d;
+}
+
+.follow-us {
+  margin-left: 2rem;
+  background-color: transparent;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 5rem 5rem 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.icon-wrapper {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-wrapper a {
+  color: var(--primary-font-color);
+}
+
+.footer-sub {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.footer-icon:hover {
+  color: var(--secondary-font-color);
+}
+
+@media screen and (max-width: 1000px) {
+  .meet-our-team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: clamp(1.2rem, 4vw, 5rem);
+  }
+
+  .what-we-do-sub-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .our-work {
+    margin: 0 4rem;
+    color: var(--primary-font-color);
+  }
+  .projects {
+    margin: 4rem;
+  }
+
+  .your-ideas {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-txt {
+    width: 100%;
+  }
+}

@@ -1,3 +1,3 @@
-function toggleCard2(element) {
+function toggleCard(element) {
   element.classList.toggle("flipped");
 }

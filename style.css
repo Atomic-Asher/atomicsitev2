@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Clashdisplay;
-  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf);
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
@@ -30,7 +30,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: 1rem 5rem 0;
+  position: fixed;
+  background-color: rgba(29, 29, 31, 0.8);
 }
 
 .nav-items {
@@ -52,15 +54,24 @@ body {
   width: 4vw;
 }
 
+/* MARQUEE SECTION */
+
+.marquee {
+  margin: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* HERO SECTION */
 
 .hero-section {
   margin: 0 5rem;
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: Clashdisplay, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   flex-wrap: wrap;
 }
 
@@ -76,7 +87,7 @@ body {
   background: linear-gradient(to right, #585a5d, #483f41);
   /* border: 1px solid linear-gradient(#fff, #525252); */
   border: none;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   height: 3rem;
   width: 10rem;
   font-size: 1rem;
@@ -86,7 +97,7 @@ body {
 }
 
 .cta-btn:hover {
-  color: var(--secondary-font-color);
+  background: var(--secondary-font-color);
 }
 
 /* WHO WE ARE SECTION */
@@ -111,6 +122,7 @@ body {
 
 .who-we-are-sub-txt {
   display: flex;
+  flex-wrap: wrap;
   gap: 10rem;
   margin-top: 2rem;
 }
@@ -188,7 +200,7 @@ body {
 /* MEET OUR TEAM SECTION */
 
 .meet-our-team {
-  margin: 5rem;
+  margin: 5rem 10rem;
 }
 
 .meet-our-team-heading {
@@ -200,7 +212,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: clamp(1.2rem, 4vw, 5rem);
+  gap: clamp(1.1rem, 3vw, 5rem);
 }
 
 .grid-item {
@@ -228,7 +240,7 @@ body {
 
 .team-sub-txt {
   font-size: 0.7rem;
-  margin: 1.2rem 0;
+  margin: 0.5rem 0;
 }
 
 .apply-btn {
@@ -237,7 +249,7 @@ body {
   color: var(--primary-font-color);
   height: 2.5rem;
   width: 6rem;
-  border-radius: 10px;
+  border-radius: 1.25rem;
   margin-top: 1rem;
 }
 
@@ -271,9 +283,9 @@ body {
 
 .our-vision,
 .our-mission {
-  padding: 3rem;
   display: flex;
-  /* flex-direction: column; */
+  height: 100px;
+  width: 300px;
   justify-content: center;
   align-items: center;
   margin: 2rem;
@@ -282,6 +294,43 @@ body {
   border-radius: 20px 0 20px 0;
   position: relative;
   gap: 1rem;
+}
+
+.our-vision:hover,
+.our-mission:hover {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.front {
+  text-align: center;
+}
+
+.back {
+  /* Back content styles */
+  transform: rotateY(180deg);
+  text-align: left;
+  padding: 1rem;
+}
+
+.rectangular:hover .card {
+  transform: rotateY(180deg);
 }
 
 .vision-main-txt,
@@ -324,7 +373,7 @@ form label {
   background: linear-gradient(to right, #585a5d, #483f41);
   /* border: 1px solid linear-gradient(#fff, #525252); */
   border: none;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   height: 3rem;
   width: 10rem;
   font-size: 1rem;
@@ -334,7 +383,7 @@ form label {
 }
 
 .submit-btn:hover {
-  color: var(--secondary-font-color);
+  background: var(--secondary-font-color);
 }
 
 .contact-sub-heading {
@@ -356,6 +405,8 @@ form label {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .icon-wrapper {

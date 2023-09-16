@@ -21,6 +21,8 @@ body {
   background-color: #1d1d1d;
   color: var(--primary-font-color);
   font-family: "Open Sans", sans-serif;
+  max-width: 1500px;
+  margin: auto;
 }
 
 /* NAVBAR SECTION */
@@ -32,6 +34,7 @@ body {
   padding: 1rem 5rem 0;
   position: fixed;
   background-color: rgba(29, 29, 31, 0.8);
+  max-width: 1500px;
 }
 
 .nav-items {
@@ -67,28 +70,11 @@ body {
 }
 
 .hero-txt {
-  width: 60%;
+  width: 50%;
 }
 
 .hero-img {
   width: 30vw;
-}
-
-.cta-btn {
-  background: linear-gradient(to right, #585a5d, #483f41);
-  /* border: 1px solid linear-gradient(#fff, #525252); */
-  border: none;
-  border-radius: 20px;
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
-  margin: 2rem 0;
-  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
-  color: var(--primary-font-color);
-}
-
-.cta-btn:hover {
-  background: var(--secondary-font-color);
 }
 
 /* OUR WORK SECTION */
@@ -174,11 +160,13 @@ body {
   margin: 2rem 0;
   box-shadow: 0 0 0 2px #1e2128, 0 0 0 4px #525252;
   color: var(--primary-font-color);
+  font-family: Clashdisplay, sans-serif;
 }
 
 .get-started-btn {
   background-color: var(--primary-font-color);
   color: #1d1d1d;
+  font-family: Clashdisplay, sans-serif;
 }
 
 .follow-us {

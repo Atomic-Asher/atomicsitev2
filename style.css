@@ -22,12 +22,15 @@ body {
   background-color: var(--background-color);
   color: var(--primary-font-color);
   font-family: "Open Sans", sans-serif;
+  max-width: 1500px;
+  margin: auto;
 }
 
 /* NAVBAR SECTION */
 
 .navbar {
   width: 100%;
+  max-width: 1500px;
   display: flex;
   justify-content: space-between;
   padding: 1rem 5rem 0;
@@ -60,6 +63,7 @@ body {
   margin: 5rem 10rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* HERO SECTION */
@@ -71,7 +75,7 @@ body {
   background-color: var(--secondary-font-color);
   position: absolute;
   z-index: -1;
-  filter: blur(7rem);
+  filter: blur(10rem);
   left: 0;
 }
 
@@ -82,7 +86,7 @@ body {
   background-color: var(--secondary-font-color);
   position: absolute;
   z-index: -1;
-  filter: blur(10rem);
+  filter: blur(15rem);
 }
 
 .hero-section {
@@ -97,7 +101,7 @@ body {
 }
 
 .hero-txt {
-  width: 60%;
+  width: 50%;
 }
 
 .hero-img {
@@ -115,6 +119,7 @@ body {
   margin: 2rem 0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #525252;
   color: var(--primary-font-color);
+  font-family: Clashdisplay, sans-serif;
 }
 
 .cta-btn:hover {
@@ -272,6 +277,7 @@ body {
   width: 6rem;
   border-radius: 1.25rem;
   margin-top: 1rem;
+  font-family: Clashdisplay, sans-serif;
 }
 
 .apply-btn:hover {
@@ -401,6 +407,7 @@ form label {
   margin: 2rem 0;
   box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
   color: var(--primary-font-color);
+  font-family: Clashdisplay, sans-serif;
 }
 
 .submit-btn:hover {
@@ -480,6 +487,10 @@ form label {
 }
 
 @media screen and (max-width: 800px) {
+  .marquee {
+    margin: 2rem 4rem;
+  }
+
   .hero-section {
     font-size: 1.5rem;
   }

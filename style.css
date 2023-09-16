@@ -6,8 +6,13 @@
 }
 
 @font-face {
-  font-family: Clashdisplay;
+  font-family: ClashdisplaySemibold;
   src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+}
+
+@font-face {
+  font-family: ClashdisplayRegular;
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
@@ -95,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: Clashdisplay, sans-serif;
+  font-family: ClashdisplaySemibold, sans-serif;
   font-size: 1.7rem;
   flex-wrap: wrap;
 }
@@ -119,7 +124,7 @@ body {
   margin: 2rem 0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #525252;
   color: var(--primary-font-color);
-  font-family: Clashdisplay, sans-serif;
+  font-family: ClashdisplayRegular, sans-serif;
 }
 
 .cta-btn:hover {
@@ -135,6 +140,7 @@ body {
 .who-we-are-heading {
   color: var(--secondary-font-color);
   margin-bottom: 2rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .who-we-are-main-txt {
@@ -156,6 +162,7 @@ body {
 .large-txt-bold {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .large-txt {
@@ -176,6 +183,7 @@ body {
 .what-we-do-heading {
   color: var(--secondary-font-color);
   margin-bottom: 2rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .what-we-do-main-txt {
@@ -232,6 +240,7 @@ body {
 .meet-our-team-heading {
   color: var(--secondary-font-color);
   margin-bottom: 2rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .meet-our-team-wrapper {
@@ -248,7 +257,7 @@ body {
   background: linear-gradient(to right, #d9d9d921, #d9d9d900);
   border: 0.5px solid #585a5d;
   border-radius: 20px 0 20px 0;
-  padding: 1.2rem 0;
+  padding: 1.2rem 0 0;
 }
 
 .blue-txt {
@@ -277,7 +286,7 @@ body {
   width: 6rem;
   border-radius: 1.25rem;
   margin-top: 1rem;
-  font-family: Clashdisplay, sans-serif;
+  font-family: ClashdisplayRegular, sans-serif;
 }
 
 .apply-btn:hover {
@@ -293,6 +302,7 @@ body {
 .our-vision-mission-header {
   color: var(--secondary-font-color);
   margin-bottom: 2rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .our-vision-mission-wrapper {
@@ -407,7 +417,7 @@ form label {
   margin: 2rem 0;
   box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
   color: var(--primary-font-color);
-  font-family: Clashdisplay, sans-serif;
+  font-family: ClashdisplayRegular, sans-serif;
 }
 
 .submit-btn:hover {
@@ -416,10 +426,12 @@ form label {
 
 .contact-sub-heading {
   margin-top: 1rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 .contact-heading {
   margin-bottom: 1rem;
+  font-family: ClashdisplaySemibold, sans-serif;
 }
 
 /* FOOTER */

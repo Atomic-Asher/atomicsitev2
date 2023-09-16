@@ -234,6 +234,10 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+  .hero-section {
+    font-size: 1.3rem;
+  }
+
   .our-work {
     margin: 0 4rem;
     color: var(--primary-font-color);
@@ -248,6 +252,10 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .hero-section {
+    font-size: 1.5rem;
+  }
+
   .hero-txt {
     width: 100%;
   }

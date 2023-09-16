@@ -64,6 +64,27 @@ body {
 
 /* HERO SECTION */
 
+.blur-circle-1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--secondary-font-color);
+  position: absolute;
+  z-index: -1;
+  filter: blur(7rem);
+  left: 0;
+}
+
+.blur-circle-2 {
+  width: 70%;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--secondary-font-color);
+  position: absolute;
+  z-index: -1;
+  filter: blur(10rem);
+}
+
 .hero-section {
   margin: 0 5rem;
   padding-top: 4rem;
@@ -92,7 +113,7 @@ body {
   width: 10rem;
   font-size: 1rem;
   margin: 2rem 0;
-  box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #525252;
   color: var(--primary-font-color);
 }
 
@@ -442,6 +463,10 @@ form label {
 }
 
 @media screen and (max-width: 520px) {
+  .hero-section {
+    font-size: 1.3rem;
+  }
+
   .meet-our-team-wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -455,6 +480,10 @@ form label {
 }
 
 @media screen and (max-width: 800px) {
+  .hero-section {
+    font-size: 1.5rem;
+  }
+
   .hero-txt {
     width: 100%;
   }

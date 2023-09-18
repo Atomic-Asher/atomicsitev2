@@ -1,7 +1,7 @@
 :root {
   --background-color: #1d1d1f;
   --primary-font-color: #fff;
-  --secondary-font-color: #208bff;
+  --secondary-font-color: #2a5fd7;
   --tertiary-color: #d5d5d5;
 }
 
@@ -49,9 +49,12 @@ body {
 }
 
 .nav-items a {
-  color: var(--primary-font-color);
   text-decoration: none;
   margin: 0 1.5rem;
+}
+
+.non-blue-txt {
+  color: var(--primary-font-color);
 }
 
 .nav-items a:hover {
@@ -69,6 +72,12 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.marquee div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HERO SECTION */
@@ -106,7 +115,7 @@ body {
 }
 
 .hero-txt {
-  width: 50%;
+  width: 55%;
 }
 
 .hero-img {
@@ -204,7 +213,7 @@ body {
   font-weight: light;
 }
 
-.what-we-do-sub {
+.front2 {
   padding: 1rem 1rem 2rem;
   background: linear-gradient(to right, #d9d9d921, #d9d9d900);
   border: 0.5px solid #585a5d;
@@ -234,7 +243,7 @@ body {
 /* MEET OUR TEAM SECTION */
 
 .meet-our-team {
-  margin: 5rem 10rem;
+  margin: 5rem;
 }
 
 .meet-our-team-heading {
@@ -265,6 +274,11 @@ body {
   font-weight: bold;
 }
 
+.blue-link {
+  color: var(--secondary-font-color);
+  text-decoration: none;
+}
+
 .meet-our-team-wrapper div {
   margin: auto;
 }
@@ -276,21 +290,6 @@ body {
 .team-sub-txt {
   font-size: 0.7rem;
   margin: 0.5rem 0;
-}
-
-.apply-btn {
-  background: var(--secondary-font-color);
-  box-shadow: 0 0 0 1px var(--background-color), 0 0 0 3px #525252;
-  color: var(--primary-font-color);
-  height: 2.5rem;
-  width: 6rem;
-  border-radius: 1.25rem;
-  margin-top: 1rem;
-  font-family: ClashdisplayRegular, sans-serif;
-}
-
-.apply-btn:hover {
-  background-color: #1163ba;
 }
 
 /* OUR VISION AND MISSION */
@@ -359,7 +358,44 @@ body {
   text-align: center;
 }
 
+.back2 {
+  position: absolute;
+  top: 0;
+  background-color: #1d1d1f;
+  border: 0.5px solid #585a5d;
+  border-radius: 0 20px 0 20px;
+}
+
+.front {
+  text-align: center;
+}
+
 .back {
+  /* Back content styles */
+  transform: rotateY(180deg);
+  text-align: left;
+}
+
+.what-we-do-sub {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.what-we-do-sub:hover {
+  transform: rotateY(180deg);
+}
+
+.back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.back2 {
   /* Back content styles */
   transform: rotateY(180deg);
   text-align: left;
@@ -426,7 +462,7 @@ form label {
 
 .contact-sub-heading {
   margin-top: 1rem;
-  font-family: ClashdisplaySemibold, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-heading {
@@ -499,6 +535,16 @@ form label {
 }
 
 @media screen and (max-width: 800px) {
+  .meet-our-team {
+    margin: 5rem 2rem;
+  }
+  .navbar {
+    padding: 1rem 2rem 0;
+  }
+  .nav-items a {
+    margin: 0 0.5rem;
+  }
+
   .marquee {
     margin: 2rem 4rem;
   }

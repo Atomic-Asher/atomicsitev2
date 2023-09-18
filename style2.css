@@ -1,6 +1,6 @@
 :root {
   --primary-font-color: #fff;
-  --secondary-font-color: #208bff;
+  --secondary-font-color: #2a5fd7;
   --tertiary-color: #d5d5d5;
 }
 
@@ -48,9 +48,17 @@ body {
 }
 
 .nav-items a {
-  color: var(--primary-font-color);
   text-decoration: none;
   margin: 0 1.5rem;
+}
+
+.non-blue-txt {
+  color: var(--primary-font-color);
+}
+
+.blue-link {
+  color: var(--secondary-font-color);
+  text-decoration: none;
 }
 
 .nav-items a:hover {
@@ -138,10 +146,21 @@ body {
 }
 
 .projects-sub-1,
-.projects-sub-2 {
+.projects-sub-2,
+.projects-sub-2-2 {
   flex-grow: 1;
   flex-basis: 0;
   min-width: 300px;
+}
+
+.projects-sub-2-2 {
+  background: url("images/background-img-2.png");
+  background-size: cover;
+  border-radius: 50px 0 50px 0;
+}
+
+.projects-sub-1 h1 {
+  color: var(--primary-font-color);
 }
 
 .projects-sub-1 {
@@ -271,6 +290,12 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .navbar {
+    padding: 1rem 2rem 0;
+  }
+  .nav-items a {
+    margin: 0 0.5rem;
+  }
   .hero-section {
     font-size: 1.5rem;
   }

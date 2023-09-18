@@ -258,6 +258,10 @@ body {
   color: var(--secondary-font-color);
 }
 
+.grey-txt {
+  color: #7e7e7e;
+}
+
 @media screen and (max-width: 1000px) {
   .meet-our-team-wrapper {
     display: grid;

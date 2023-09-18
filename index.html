@@ -12,18 +12,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
   </head>
   <body>
-    <nav class="navbar">
-      <a href="index.html"
-        ><img class="logo-img" src="images/Logo-256x256.jpg" alt="Logo"
-      /></a>
-      <div class="nav-items">
-        <a class="blue-link" href="index.html">Home</a>
-        <a class="non-blue-txt" href="portfolio.html">Portfolio</a>
-        <a class="non-blue-txt" href="https://blog.atomicasher.com/">Blog ↗</a>
-      </div>
-    </nav>
+    <section class="nav-section">
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="logo-img" src="images/Logo-256x256.jpg" alt="Logo"
+        /></a>
+        <div class="nav-items">
+          <a class="blue-link" href="index.html">Home</a>
+          <a class="non-blue-txt" href="portfolio.html">Portfolio</a>
+          <a class="non-blue-txt" href="https://blog.atomicasher.com/"
+            >Blog ↗</a
+          >
+        </div>
+      </nav>
+    </section>
 
     <section class="hero-section">
       <div class="blur-circle-1"></div>
@@ -34,7 +39,15 @@
       <div>
         <br />
         <br />
-        <img class="hero-img" src="images/hero-atom.png" alt="hero image" />
+        <!-- <img class="hero-img" src="images/hero-atom.png" alt="hero image" /> -->
+        <lottie-player
+          src="https://lottie.host/0186e4fc-9754-4cbb-b8a8-4dcc4c4af9cc/HdPtEOendQ.json"
+          background="transparent"
+          speed="1"
+          style="width: clamp(300px, 35vw, 525px); transform: rotateY(180deg)"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </section>
     <section class="marquee">
@@ -291,7 +304,7 @@
         ourselves.
       </p>
     </footer>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

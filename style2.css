@@ -32,14 +32,21 @@ body {
 
 /* NAVBAR SECTION */
 
+.nav-section {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 31, 0.8);
+}
+
 .navbar {
   width: 100%;
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 1rem 5rem 0;
-  position: fixed;
-  background-color: rgba(29, 29, 31, 0.8);
-  max-width: 1500px;
 }
 
 .nav-items {

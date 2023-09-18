@@ -33,14 +33,21 @@ body {
 
 /* NAVBAR SECTION */
 
+.nav-section {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 31, 0.8);
+}
+
 .navbar {
   width: 100%;
   max-width: 1500px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 1rem 5rem 0;
-  position: fixed;
-  background-color: rgba(29, 29, 31, 0.8);
 }
 
 .nav-items {
@@ -308,6 +315,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .year {
@@ -320,8 +328,8 @@ body {
 .our-vision,
 .our-mission {
   display: flex;
-  height: 100px;
-  width: 300px;
+  min-height: 100px;
+  min-width: 300px;
   justify-content: center;
   align-items: center;
   margin: 2rem;
@@ -329,6 +337,7 @@ body {
   border: 0.5px solid #585a5d;
   border-radius: 20px 0 20px 0;
   position: relative;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 

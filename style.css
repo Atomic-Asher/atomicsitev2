@@ -543,6 +543,21 @@ form label {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .marquee {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .what-we-do-sub-wrapper {
+    gap: 2rem;
+  }
+
+  .who-we-are-sub-txt {
+    gap: 3rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .meet-our-team {
     margin: 5rem 2rem;

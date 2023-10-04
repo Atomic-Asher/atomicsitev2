@@ -1,0 +1,45 @@
+:root {
+  --background-color: #1d1d1f;
+  --primary-font-color: #fff;
+  --secondary-font-color: #2a5fd7;
+  --tertiary-color: #d5d5d5;
+}
+
+@font-face {
+  font-family: ClashdisplaySemibold;
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+}
+
+@font-face {
+  font-family: ClashdisplayRegular;
+  src: url(fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-font-color);
+  max-width: 1500px;
+  margin: auto;
+}
+
+.privacy-section {
+  margin: 2rem 5rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  font-size: 1.5rem;
+}
+
+.email {
+  color: var(--primary-font-color);
+}

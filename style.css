@@ -112,7 +112,7 @@ body {
 
 .hero-section {
   margin: 0 5rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,22 +125,30 @@ body {
   width: 55%;
 }
 
+.hero-sub-txt {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #d5d5d5;
+}
+
 .hero-img {
   width: 30vw;
 }
 
 .cta-btn {
-  background: linear-gradient(to right, #585a5d, #483f41);
+  background: var(--primary-font-color);
   /* border: 1px solid linear-gradient(#fff, #525252); */
   border: none;
   border-radius: 1.5rem;
-  height: 3rem;
+  height: 2.7rem;
   width: 10rem;
   font-size: 1rem;
   margin: 2rem 0;
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #525252;
-  color: var(--primary-font-color);
-  font-family: ClashdisplayRegular, sans-serif;
+  color: var(--background-color);
+  font-family: ClashdisplaySemiBold, sans-serif;
+  letter-spacing: 0.8px;
 }
 
 .cta-btn:hover {

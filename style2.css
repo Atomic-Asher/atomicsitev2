@@ -189,6 +189,22 @@ body {
   border-radius: 50px 0 50px 0;
 }
 
+/* OTHER PROJECTS */
+
+.other-projects {
+  margin: 5rem 10rem;
+}
+
+.other-projects-header {
+  color: var(--secondary-font-color);
+  margin-bottom: 2rem;
+  font-family: ClashdisplaySemibold, sans-serif;
+}
+
+.other-projects-main {
+  margin-bottom: 2rem;
+}
+
 /* YOUR IDEAS SECTION */
 
 .your-ideas {
@@ -235,6 +251,10 @@ body {
 
 .footer {
   margin: 5rem 5rem 0;
+}
+
+.services-footer a {
+  color: #2a5fd7;
 }
 
 .footer-wrapper {
@@ -292,6 +312,10 @@ body {
     color: var(--primary-font-color);
   }
   .projects {
+    margin: 4rem;
+  }
+
+  .other-projects {
     margin: 4rem;
   }
 

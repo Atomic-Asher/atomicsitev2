@@ -28,10 +28,54 @@ body {
   color: var(--primary-font-color);
   max-width: 1500px;
   margin: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* NAVBAR SECTION */
+
+.nav-section {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 29, 31, 0.8);
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem 0;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items a {
+  text-decoration: none;
+  margin: 0 1.5rem;
+}
+
+.non-blue-txt {
+  color: var(--primary-font-color);
+}
+
+.nav-items a:hover {
+  color: var(--secondary-font-color);
+}
+
+.logo-img {
+  width: 4vw;
+}
+
+/* PRIVACY SECTION */
+
 .privacy-section {
-  margin: 2rem 5rem;
+  margin: 5rem 5rem 2rem;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }

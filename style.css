@@ -494,6 +494,10 @@ form label {
   gap: 2rem;
 }
 
+.services-footer a {
+  color: #2a5fd7;
+}
+
 .icon-wrapper {
   margin: 1rem 0;
   display: flex;

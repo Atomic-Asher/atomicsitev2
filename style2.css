@@ -302,25 +302,25 @@ body {
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
   .hero-section {
     font-size: 1.3rem;
   }
 
   .our-work {
-    margin: 0 4rem;
+    margin: 0 2rem;
     color: var(--primary-font-color);
   }
   .projects {
-    margin: 4rem;
+    margin: 2rem;
   }
 
   .other-projects {
-    margin: 4rem;
+    margin: 2rem;
   }
 
   .your-ideas {
-    margin: 4rem;
+    margin: 2rem;
   }
 }
 

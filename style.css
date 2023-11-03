@@ -458,6 +458,20 @@ form label {
   font-family: ClashdisplaySemibold, sans-serif;
 }
 
+/* PRESS RELEASE SECTION */
+
+.press-release-section {
+  padding-top: 100px; /* Adjust this value as needed to avoid overlapping with the banner */
+}
+
+.text-box {
+  background-color: transparent;
+  padding: 3rem; /* Spacing inside the box, assuming 1rem = 16px this would be 20px */
+  margin: 2rem 0; /* Spacing outside the box, top and bottom margin */
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* A subtle shadow, converted to rem */
+  border-radius: 0.5rem; /* Rounded corners, assuming 1rem = 16px this would be 8px */
+}
+
 /* FOOTER */
 
 .footer {

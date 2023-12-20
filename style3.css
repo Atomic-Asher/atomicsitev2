@@ -76,12 +76,12 @@ body {
 
 .privacy-section {
   margin: 5rem 5rem 2rem;
-  font-family: Arial, sans-serif;
   line-height: 1.6;
+  font-family: ClashdisplayRegular, sans-serif;
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .email {

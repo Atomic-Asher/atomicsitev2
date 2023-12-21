@@ -170,6 +170,10 @@ body {
   color: #7e7e7e;
 }
 
+.anon-user-img {
+  width: 5rem;
+}
+
 .who-we-are-sub-txt {
   display: flex;
   flex-wrap: wrap;

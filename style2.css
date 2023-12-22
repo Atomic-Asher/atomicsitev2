@@ -277,7 +277,7 @@ body {
 }
 
 .new-qrs-ps-img {
-  width: clamp(22rem, 30vw, 32rem);
+  width: clamp(18rem, 30vw, 32rem);
 }
 
 /* OUR SOULTION SECTION */
@@ -473,7 +473,6 @@ body {
   height: 3rem;
   width: 10rem;
   font-size: 1rem;
-  margin: 2rem 0;
   box-shadow: 0 0 0 3px var(--background-color), 0 0 0 6px #525252;
   color: var(--primary-font-color);
   font-family: ClashdisplayRegular, sans-serif;
@@ -561,7 +560,7 @@ body {
   }
 
   .download-section {
-    margin: 5rem auto;
+    margin: 2rem auto;
     width: 70%;
     display: grid;
     grid-template-columns: 1fr;
@@ -579,7 +578,7 @@ body {
     width: 12rem;
   }
   .ui-screen-2-img {
-    width: 20rem;
+    width: 18rem;
   }
 
   .case-study-info {
@@ -622,7 +621,7 @@ body {
     margin: 8.5rem 2rem 5rem;
   }
   .download-section {
-    margin: 5rem 2rem;
+    margin: 5rem 2rem 2rem;
   }
   .store-icon {
     height: 2.5rem;
@@ -641,6 +640,8 @@ body {
   }
   .whatsapp-mockup-section {
     flex-direction: column;
+    margin: 5rem 2rem;
+    text-align: center;
   }
   .portfolio-section {
     margin: 5rem 2rem;
@@ -683,8 +684,5 @@ body {
   }
   .ui-screen-1-img {
     width: 15rem;
-  }
-  .ui-screen-2-img {
-    width: 25rem;
   }
 }

@@ -622,11 +622,29 @@ form label {
     margin: 2rem 4rem;
   }
 
+  .who-we-are {
+    margin: 5rem 2rem;
+  }
+
+  .what-we-do {
+    margin: 5rem 2rem;
+  }
+
+  .our-vision-mission {
+    margin: 5rem 2rem;
+  }
+
+  .contact-us {
+    margin: 5rem 2rem;
+  }
+
   .hero-section {
     font-size: 1.5rem;
+    margin: 0 2rem;
   }
 
   .hero-txt {
     width: 100%;
+    font-size: 1.2rem;
   }
 }

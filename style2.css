@@ -89,7 +89,7 @@ body {
 /* PORTFOLIO SECTION */
 
 .portfolio-section {
-  margin: 5rem;
+  margin: 7.5rem 5rem 5rem;
 }
 
 .portfolio-heading {
@@ -189,12 +189,20 @@ body {
   align-self: center;
 }
 
+.case-study-info {
+  font-size: 1.2rem;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+}
+
 .qr-logo {
   height: 5rem;
 }
 
 .iphone-mockup {
-  width: clamp(20rem, 40vw, 25rem);
+  width: clamp(18rem, 40vw, 25rem);
 }
 
 .free-hand-mockup {
@@ -223,7 +231,7 @@ body {
 /* PS SECTION */
 
 .ps-section {
-  margin: 5rem;
+  margin: 7.5rem 5rem 5rem;
   font-family: ClashdisplayRegular, sans-serif;
   display: flex;
   gap: 2rem;
@@ -258,6 +266,10 @@ body {
   justify-self: center;
   align-self: center;
   width: 3rem;
+}
+
+.ps-icon-wrapper p {
+  font-size: 0.8rem;
 }
 
 .whatsapp-number-cleaner-ps-img {
@@ -362,7 +374,7 @@ body {
 }
 
 .whatsapp-demo-img {
-  width: 50vw;
+  width: 80%;
   margin: 2rem;
 }
 
@@ -391,7 +403,7 @@ body {
 }
 
 .features-card-img {
-  margin: 2rem;
+  margin: 2rem 0;
   width: clamp(15rem, 45vw, 45rem);
 }
 
@@ -412,16 +424,17 @@ body {
 }
 
 .download-phone-img {
-  width: 10rem;
+  width: 15rem;
 }
 
 .store-icon-wrapper {
   display: flex;
   gap: 2rem;
+  /* justify-content: center; */
 }
 
 .store-icon {
-  height: 2.5rem;
+  height: 3rem;
 }
 
 .download-right {
@@ -449,7 +462,7 @@ body {
 }
 
 .whatsapp-mockup-img {
-  width: 30rem;
+  width: clamp(18rem, 35vw, 35rem);
 }
 
 .whatsapp-mockup-btn {
@@ -558,26 +571,61 @@ body {
   align-items: center; */
   }
 
+  .info-wrapper {
+    font-size: 0.8rem;
+  }
+
   .ui-screen-1-img {
     width: 12rem;
   }
   .ui-screen-2-img {
     width: 20rem;
   }
+
+  .case-study-info {
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin: 5rem 2rem 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .navbar {
     padding: 1rem 2rem 0;
+    font-size: 0.8rem;
   }
   .nav-items a {
     margin: 0 0.5rem;
+  }
+  .nav-sub-txt {
+    font-size: 0.8rem;
+  }
+  .nav-sub-txt {
+    margin: auto;
+    padding: 1rem 2rem 0;
+  }
+  .nav-sub-txt a {
+    margin-right: 0.5rem;
+  }
+  .overview-section {
+    margin: 5rem 2rem;
+  }
+  .features-section {
+    margin: 5rem 2rem;
   }
   .other-projects {
     margin: 2rem;
   }
   .hero-section {
     margin: 8.5rem 2rem 5rem;
+  }
+  .download-section {
+    margin: 5rem 2rem;
+  }
+  .store-icon {
+    height: 2.5rem;
   }
   .our-soln-section {
     margin: 5rem 2rem;
@@ -590,6 +638,12 @@ body {
   }
   .hero-content-left {
     width: 100%;
+  }
+  .whatsapp-mockup-section {
+    flex-direction: column;
+  }
+  .portfolio-section {
+    margin: 5rem 2rem;
   }
   .portfolio-main-wrapper {
     display: grid;
@@ -604,6 +658,9 @@ body {
     max-width: 100%;
   }
   .ui-screens-section {
+    margin: 5rem 2rem;
+  }
+  .whatsapp-demo-section {
     margin: 5rem 2rem;
   }
   .ui-screens-1,

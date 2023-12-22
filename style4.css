@@ -198,6 +198,12 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    margin: 5rem 2rem 0;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .press-release {
     margin: 5rem 2rem;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atomic Asher LLP - Security Chatbot</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <section class="nav-section">
+      <!-- Existing navigation bar code -->
+    </section>
+
+    <!-- Hero Section with Chatbot Introduction -->
+    <section class="hero-section">
+      <div class="hero-content-wrapper">
+        <div class="hero-content-left">
+          <p class="grey-txt">Introducing</p>
+          <br /><br />
+          <div class="title-wrapper">
+            <img class="chatbot-logo" src="images/chatbot-logo.png" alt="Chatbot Logo" />
+            <p class="title">Security Chatbot</p>
+          </div>
+          <br /><br />
+          <p>
+            Our AI-driven security chatbot helps identify scam communications, 
+            verifying them against a bank's database, and updates the database 
+            with identified scams.
+          </p>
+          <br /><br />
+          <button id="openChatbot" class="chatbot-button">Chat with Bot</button>
+        </div>
+        <div class="hero-content-right">
+          <img
+            class="chatbot-mockup"
+            src="images/chatbot-mockup.png"
+            alt="Chatbot Mockup"
+          />
+        </div>
+      </div>
+    </section>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "c63be968-41d9-4251-b0f3-ce9fb2b8c89a",
+        apiHost: "https://flowiseai-railway-production-3887.up.railway.app",
+    })
+</script>
+    <!-- Chatbot Features Section -->
+    <section class="features-section">
+      <div class="features-wrapper">
+        <h1>Chatbot Features</h1>
+        <ul>
+          <li>Detect scam SMS or emails with high accuracy.</li>
+          <li>Verify messages against a validated database.</li>
+          <li>Automatically update the database with new scams.</li>
+          <li>Interactive chat feature for scam verification tests.</li>
+        </ul>
+      </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Existing footer code -->
+    </footer>
+
+    <!-- JavaScript for Chatbot (Placeholder) -->
+    <script src="chatbot.js"></script>
+    <script>
+      document.getElementById('openChatbot').addEventListener('click', function() {
+        // Placeholder for opening chatbot - Actual functionality needs to be implemented in chatbot.js
+        alert("Chatbot functionality will be implemented here.");
+      });
+    </script>
+  </body>
+</html>

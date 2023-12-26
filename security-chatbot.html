@@ -17,7 +17,25 @@
   <body>
     <!-- Navigation Section -->
     <section class="nav-section">
-      <!-- Existing navigation bar code -->
+      <nav class="navbar">
+        <a href="index.html"
+          ><img class="logo-img" src="images/Logo-256x256.jpg" alt="Logo"
+        /></a>
+        <div class="nav-items">
+          <a class="non-blue-txt" href="index.html">About Us</a>
+          <a class="blue-link" href="portfolio.html">Portfolio</a>
+          <a class="non-blue-txt" href="press-releases.html">PR Releases</a>
+          <a class="non-blue-txt" href="https://blog.atomicasher.com/"
+            >Blog ↗</a
+          >
+        </div>
+      </nav>
+      <div class="nav-sub-txt">
+        <p>
+          <a class="blue-link" href="portfolio.html">—— Portfolio</a> > QR
+          Safety Checker App
+        </p>
+      </div>
     </section>
 
     <!-- Hero Section with Chatbot Introduction -->
@@ -48,12 +66,51 @@
       </div>
     </section>
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "c63be968-41d9-4251-b0f3-ce9fb2b8c89a",
-        apiHost: "https://flowiseai-railway-production-3887.up.railway.app",
-    })
-</script>
+        import Chatbot from "https://cdn.jsdelivr.net/gh/atomic-asher/FlowiseChatEmbed@latest/dist/web.js"
+        Chatbot.init({
+            chatflowid: "c63be968-41d9-4251-b0f3-ce9fb2b8c89a",
+            apiHost: "https://flowiseai-railway-production-3887.up.railway.app",
+            chatflowConfig: {
+                // topK: 2
+            },
+            theme: {
+                button: {
+                    backgroundColor: "#1d6295",
+                    right: 20,
+                    bottom: 20,
+                    size: "medium",
+                    iconColor: "white",
+                    customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
+                },
+                chatWindow: {
+                    welcomeMessage: "Hello! How can I help you?",
+                    backgroundColor: "#1264a2",
+                    height: 700,
+                    width: 400,
+                    fontSize: 16,
+                    poweredByTextColor: "black",
+                    botMessage: {
+                        backgroundColor: "#f7f8ff",
+                        textColor: "#303235",
+                        showAvatar: true,
+                        avatarSrc: "https://atomicasher.com/images/ac2e9853-b9e8-4e63-8b6c-dce146582d90.png",
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "white",
+                        showAvatar: true,
+                        avatarSrc: "https://atomicasher.com/images/anon-user.svg",
+                    },
+                    textInput: {
+                        placeholder: "Type your question here",
+                        backgroundColor: "#ffffff",
+                        textColor: "#303235",
+                        sendButtonColor: "#3B81F6",
+                    }
+                }
+            }
+        })
+    </script>
     <!-- Chatbot Features Section -->
     <section class="features-section">
       <div class="features-wrapper">
@@ -70,7 +127,46 @@
    
     <!-- Footer -->
     <footer class="footer">
-      <!-- Existing footer code -->
+     <div class="footer-wrapper">
+        <div class="details-footer">
+          <h4>Atomic Asher LLP</h4>
+          <br />
+          <p>GSTIN- 27ABYFA1745P1ZL</p>
+          <p>LLPIN- AAZ-4586</p>
+          <p>Date of Incorporation - 12th November 2021</p>
+        </div>
+
+        <div class="links-footer">
+          <div class="mains">
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a class="non-blue-txt" href="index.html">ABOUT US</a>
+            <a class="blue-link" href="portfolio.html">PORTFOLIO</a>
+            <a class="non-blue-txt" href="press-releases.html">PR RELEASES</a>
+            <a class="non-blue-txt" href="https://blog.atomicasher.com/"
+              >BLOG ↗</a
+            >
+          </div>
+          <div class="icon-wrapper">
+            <a href="https://www.linkedin.com/company/atomic-asher-llp/"
+              ><i class="fa-brands fa-linkedin-in footer-icon"></i
+            ></a>
+            <a href="https://twitter.com/AtomicAsher">
+              <i class="fa-brands fa-twitter footer-icon"></i
+            ></a>
+            <a href="https://www.instagram.com/atomicasher/"
+              ><i class="fa-brands fa-instagram footer-icon"></i
+            ></a>
+            <!--<a href="mailto:"
+              ><i class="fa-solid fa-envelope footer-icon"></i
+            ></a>-->
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-sub grey-txt">
+        © 2023 Atomic Asher. All rights reserved. Site designed and built by
+        ourselves.
+      </p>
     </footer>
 
     <!-- JavaScript for Chatbot (Placeholder) -->

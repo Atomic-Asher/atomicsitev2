@@ -200,7 +200,11 @@ body {
 .qr-logo {
   height: 5rem;
 }
-
+.chatbot-logo {
+    width: 100%; /* Scale based on the container's width */
+    max-width: 400px; /* Adjust this to the actual width of your image */
+    height: auto; /* This maintains the aspect ratio */
+}
 .iphone-mockup {
   width: clamp(18rem, 40vw, 25rem);
 }
